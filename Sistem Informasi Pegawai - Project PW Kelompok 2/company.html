@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Icons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Sistem Informasi Pegawai | STT Nurul Fikri</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
+          </a>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+
+        <!-- Messages Dropdown Menu -->
+
+        <!-- Notifications Dropdown Menu -->
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index-admin.html" class="brand-link">
+        <img src="dist/img/stt.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">SIMPEG STT NF</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="dist/img/user.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Admin</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="index-admin.html" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="company.html" class="nav-link active">
+                <i class="nav-icon fas fa-newspaper"></i>
+                <p>
+                  Company
+                </p>
+              </a>
+            </li>
+            <li class="nav-item menu-open">
+              <a href="daftar pegawai.html" class="nav-link ">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Employee
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="daftar pegawai.html" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar Pegawai</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="kelola pegawai.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Kelola Pegawai</p>
+                  </a>
+                </li>
+              </ul>  
+            </li>
+            <li class="nav-item">
+              <a href="time attendance.html" class="nav-link">
+                <i class="nav-icon fas fa-moon"></i>
+                <p>
+                  Time Attendance
+                </p>
+              </a>
+            </li>
+            <li class="nav-item menu-open">
+                <a href="overtime.html" class="nav-link">
+                  <i class="nav-icon fas fa-tachometer-alt"></i>
+                  <p>
+                    Overtime
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="form pengajuan lembur.html" class="nav-link ">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Form Pengajuan Lembur</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="daftar pengajuan lembur.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Daftar Pengajuan Lembur</p>
+                    </a>
+                  </li>
+                </ul>  
+              </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Log out
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0">Tentang STT Nurul Fikri</h1><br>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="index-admin.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="index-admin.html">Admin</a></li>
+                <li class="breadcrumb-item active">Company</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section>
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset class="card p-1" style="border: 2px solid">
+                  <legend class="float-none w-auto p-2">Sejarah STT Nurul Fikri</legend>
+                  <form>
+                    <div>
+                      <p>
+                        Sejarah STT-NF diawali pada tahun 1994 dengan berdirinya lembaga Nurul Fikri Computer & Statistics (NCS), atau disebut juga sebagai NF Computer. Pada 1998, NF Computer mulai menyediakan pelatihan Linux dan aplikasi Open Source kepada masyarakat luas. 
+                        Pada tahun 2000, NCS berubah nama menjadi Lembaga Pendidikan Komputer Nurul Fikri (LPK-NF), yang kemudian berganti nama kembali menjadi Lembaga Pendidikan dan Pengembangan Profesi Terpadu Nurul Fikri (LP3T-NF). Pada tahun 2007, LP3T-NF mulai menyelenggarakan pendidikan teknologi informasi dua tahun yang terakreditasi Badan Akreditasi Nasional Pendidikan Non Formal. 
+                      </p>
+                      <p>
+                        Tingginya permintaan dan minat masyarakat dan industri terhadap keahlian di bidang teknologi informasi menyebabkan pada tahun 2009 didirikan Yayasan Profesi Terpadu Nurul Fikri yang mengajukan ijin pendirian STT-NF sebagai perguruan tinggi formal di bidang teknologi. 
+                        Pada tanggal 13 Agustus 2012, STT-NF resmi berdiri dengan SK Menteri Pendidikan dan Kebudayaan No. 269/E/O/2012 dengan dua program studi yaitu Sistem Informasi dan Teknik Informatika. Pada tahun 2022, seiring dengan perkembangan ekonomi digital yang pesat, STT-NF menambah program studi baru yang Bisnis Digital.
+                      </p>
+                    </div>
+                  </form>
+                </fieldset>
+                <fieldset class="card p-1" style="border: 2px solid">
+                  <legend class="float-none w-auto p-2">Visi Misi Tujuan STT Nurul Fikri</legend>
+                  <form>
+                    <div>
+                      <p>
+                        <h5>Visi</h5>
+                        Pada tahun 2045 menjadi Sekolah Tinggi Teknologi yang unggul di Indonesia, berbudaya inovasi, berjiwa teknopreneur, dan berkarakter religius.
+                      </p>
+                      
+                      <p>
+                        <h5>Misi</h5>
+                      </p>
+                      <p>1. Menyelenggarakan pendidikan tinggi berkualitas yang mengembangkan jiwa kepemimpinan dan teknopreneurship berlandaskan iman dan takwa.</p>
+                      <p>2. Melaksanakan penelitian yang inovatif dan berorientasi pada pengembangan teknologi masa depan.</p>
+                      <p>3. Menyelenggarakan pengabdian kepada masyarakat dengan memanfaatkan teknologi tepat guna.</p>
+                      <p>4. Membangun lingkungan akademik yang kondusif bagi terwujudnya kebebasan akademik, otonomi keilmuan, dan budaya inovasi.</p>
+
+                      <p>
+                        <h5>Tujuan</h5>
+                      </p>
+                      <p>1. Menghasilkan sarjana yang kompeten, profesional, berakhlak mulia, sehingga mampu berkompetisi di dunia kerja.</p>
+                      <p>2. Menghasilkan karya-karya ilmiah dibidang teknologi informasi berwawasan masa depan yang inovatif dan bercirikan keterbukaan (openness) seperti open source, open standar dan open access/content, sehingga bermanfaat bagi bangsa Indonesia dan diakui secara Internasional.</p>
+                      <p>3. Menerapkan ilmu pengetahuan dan teknologi tepat guna bagi masyarakat dengan melibatkan sivitas akademika.</p>
+                      <p>4. Menciptakan kultur akademik yang inovatif, kompetitif dan kondusif untuk mewujudkan institusi yang unggul dan terkemuka.</p>
+                    </div>
+                  </form> 
+                </fieldset>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
+      </div>
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+        Kelompok 2 - Sistem Informasi Pegawai
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2024 <a href=""> - STT Nurul Fikri</a>
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+</body>
+
+</html>

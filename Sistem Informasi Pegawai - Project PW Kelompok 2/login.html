@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SI Pegawai | Log in</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Icons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #background-video {
+      position: fixed;
+      right: auto;
+      bottom: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      /* Warna latar belakang dengan opacity */
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      /* Bayangan untuk memberikan kedalaman */
+      backdrop-filter: blur(0px);
+      /* Efek blur menggunakan backdrop-filter */
+      text-align: center;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body class="hold-transition login-page">
+  <video id="background-video" playsinline="" autoplay="autoplay" muted="muted" loop="">
+    <source src="Vidio_Cinematic.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <section style="display: grid; grid-template-columns: 2fr 2fr;">
+    <div style="grid-column: 1; border-right: 3px solid;">
+      <div class="login-box">
+        <div class="login-logo">
+          <b>Sistem informasi </b>Pegawai
+          <h6>Sebuah website yang berfokus pada sistem pegawai (Sistem Informasi Pegawai) menyediakan platform online untuk manajemen informasi terkait pegawai atau karyawan dalam suatu organisasi.  </h6>
+          <h6>Sistem informasi pegawai dapat membantu organisasi
+            mengoptimalkan manajemen sumber daya manusia, meningkatkan efisiensi
+            operasional, dan memberikan informasi yang diperlukan untuk pengambilan
+            keputusan strategis.</h6>
+          <h6>Website sistem pegawai yang baik dapat meningkatkan efisiensi, transparansi, dan pengelolaan sumber daya manusia organisasi secara keseluruhan. Keamanan dan privasi data menjadi fokus utama dalam pengembangan dan pengelolaan website ini.</h6>
+        </div>
+      </div>
+    </div>
+    <div style="grid-column: 2; padding-left: 120px;">
+      <div class="login-box">
+        <div class="login-logo">
+          <b>Sistem informasi </b>Pegawai
+        </div>
+        <!-- /.login-logo -->
+        <div class="card" align="right">
+          <div class="card-body login-card-body">
+            <p class="login-box-msg">Silahkan Login</p>
+
+            <form id="loginForm" onsubmit="login()">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username" id="username" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" id="password" required>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+
+                <!-- /.col -->
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </div>
+                <!-- /.col -->
+              </div>
+              <br>
+            </form>
+
+
+            <!-- /.social-auth-links -->
+
+            <p class="mb-1">
+              <a href="recover-password.html">Lupa sandi?</a>
+            </p>
+            <p class="mb-0">
+              <a href="register.html" class="text-center">Registrasi member</a>
+            </p>
+          </div>
+          <!-- /.login-card-body -->
+        </div>
+      </div>
+      <!-- /.login-box -->
+
+      <!-- jQuery -->
+      <script src="plugins/jquery/jquery.min.js"></script>
+      <!-- Bootstrap 4 -->
+      <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- AdminLTE App -->
+      <script src="dist/js/adminlte.min.js"></script>
+
+
+      <!-- script untuk form login -->
+      <script>
+        function login() {
+          //mengambil nilai username dan password dari form
+          let user = document.getElementById("username").value;
+          let pass = document.getElementById("password").value;
+          let form = document.getElementById("loginForm"); //kalo pake dashboard.html
+
+          //memeriksa apakah username dan password sesuai dengan yang ditentukan
+          if (user == "admin" && pass == "admin123") {
+            alert("Login Successful!");
+            userType = "guest";
+            form.setAttribute("action", "./index-admin.html"); //kalo pake dashboard.html
+          }
+          // else if(user == "rapah" && pass == "rapah123"){
+          //        alert("Logged in!");
+          //        userType = "admin"
+          //       //  form.setAttribute("action","./index (rapah).html");
+          // }
+          else {
+            alert("Login Failed. Try Again!");
+          }
+
+          // if(userType == "guest"){
+          //   form.setAttribute("action", "./index (guest).html");  
+          // }
+          // else if(userType == "admin"){
+          //   form.setAttribute("action","./index (rapah).html");
+          // }
+        }    
+      </script>
+</body>
+
+</html>

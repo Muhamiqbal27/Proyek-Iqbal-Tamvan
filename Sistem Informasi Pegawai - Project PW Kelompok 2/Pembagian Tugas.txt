@@ -1,0 +1,9 @@
+Bagian Tugas Project Kelompok 2 
+
+Muhammad Iqbal : Tabel Daftar Pegawai (AdminLTE), Time Attendance (AdminLTE), Overtime(AdminLTE) (Form Pengajuan Lembur & Daftar Pengajuan), pembicara presentasi.
+
+Nuril Sulistia A. : Form Kelola Pegawai (AdminLTE)
+
+Rizaldy Rafa A. : Seluruh Template Website Bootstrap, Memberi dasar-dasar AdminLTE (Codingan dasar seperti : Mengubah nama tab/file di Navbar menjadi Dashboard, Company dll. Mengubah Title, dll. Agar sesuai dengan yg diminta berdasarkan slide.), agar yg lain bisa melanjutkan tugasnya tanpa membuat ulang dasar-dasarnya.
+
+Sandy Wardana : Login page (termasuk video background), Dashboard (AdminLTE), Pengedit video presentasi, pembicara presentasi.
